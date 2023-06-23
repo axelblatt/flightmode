@@ -3,6 +3,7 @@
 
 ![Flightmode_comm](https://github.com/axelblatt/flightmode/assets/84366597/3829e8b9-bc0d-4940-bfc0-cf8e42f8615d)
 ![image](https://github.com/axelblatt/flightmode/assets/84366597/e8d1f5b0-8e9d-4029-ba1e-21b44eca9230)
-![image](https://github.com/axelblatt/flightmode/assets/84366597/7ef1b610-3153-44c9-b2fe-7e9abb6fbfea)
+![image](https://github.com/axelblatt/flightmode/assets/84366597/6f5086f9-89d8-4659-936d-65dcfd8a4a59)
+
 
 
