@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchView"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
+        android:completionThreshold="1"
+        android:fontFamily="@font/psregular"
+        android:hapticFeedbackEnabled="false"
+        android:hint="@string/typecity"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/takeoffButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/takeoffButton"
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/takeoff_button_activated"
+        app:icon="@drawable/ic_baseline_flight_takeoff_24"
+        app:iconGravity="top"
+        app:layout_constraintEnd_toStartOf="@+id/landButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/landButton"
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/land_button_activated"
+        app:icon="@drawable/ic_baseline_flight_land_24"
+        app:iconGravity="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/takeoffButton"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- <↓> android:background="@color/teal_700" <↓> -->
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/round_table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/landButton">
+
+        <!-- Table heading -->
+        <!-- В TextView @drawable/border_tables background -->
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/t0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/place_to"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_to"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_out"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <!-- Table data -->
+        <TableRow android:id="@+id/tr1">
+
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/place_x2_holder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tr2">
+
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/place_x2_holder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tr3">
+
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/place_x2_holder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t31"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t32"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tr4">
+
+            <TextView
+                android:id="@+id/p4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/place_x2_holder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t41"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t42"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tr5">
+
+            <TextView
+                android:id="@+id/p5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/place_x2_holder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t51"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t52"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/psmedium"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10sp"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/my_tickets"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_baseline_airplane_ticket_24_white"
+        android:fontFamily="@font/psmedium"
+        android:gravity="center_vertical|start"
+        android:text="@string/my_tickets"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="#483D41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/account_button"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_baseline_people_24"
+        android:fontFamily="@font/psmedium"
+        android:gravity="center_vertical|start"
+        android:text="@string/account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="#483D41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_tickets" />
+
+    <!--
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+    -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

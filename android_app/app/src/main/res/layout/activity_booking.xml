@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bookingcon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:context=".Booking">
+
+    <ScrollView
+        android:id="@+id/scrollview_"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/buyheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/psmedium"
+                android:text="@string/buying_ticket"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/flight_info"
+                android:layout_width="343dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="79dp"
+                android:fontFamily="@font/psmedium"
+                android:text="@string/airport_destination"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:id="@+id/tlb"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/choose_class"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flight_info">
+
+                <TableRow android:id="@+id/tlb_1">
+
+                    <TextView
+                        android:id="@+id/t2_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/econom"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t2_11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/price"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow android:id="@+id/tlb_2">
+
+                    <TextView
+                        android:id="@+id/t2_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/comfort"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t2_21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/price"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow android:id="@+id/tlb_3">
+
+                    <TextView
+                        android:id="@+id/t2_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/business"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t2_31"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/price"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tlb2"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/choose_class"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tlb">
+
+                <TableRow android:id="@+id/tlb2_1">
+
+                    <TextView
+                        android:id="@+id/t3_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/baggage"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t3_11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/price"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow android:id="@+id/tlb2_2">
+
+                    <TextView
+                        android:id="@+id/t3_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/pets"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t3_21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/price"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow android:id="@+id/tlb2_3">
+
+                    <TextView
+                        android:id="@+id/t3_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/windows"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t3_31"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/price"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow android:id="@+id/tlb2_4">
+
+                    <TextView
+                        android:id="@+id/t3_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/insurance"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t3_41"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/psmedium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="10sp"
+                        android:text="@string/price"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="280dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:fontFamily="@font/psmedium"
+                android:hint="@string/full_n"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tlb2" />
+
+            <Spinner
+                android:id="@+id/gend_"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="280dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/gender"
+                android:ems="10"
+                android:fontFamily="@font/psmedium"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+            <Spinner
+                android:id="@+id/nationality_"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="280dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:fontFamily="@font/psmedium"
+                android:contentDescription="@string/nationality"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gend_" />
+
+            <EditText
+                android:id="@+id/birth_"
+                android:layout_width="280dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:fontFamily="@font/psmedium"
+                android:hint="@string/birth"
+                android:focusable="false"
+                android:inputType="date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nationality_" />
+
+            <EditText
+                android:id="@+id/pn_"
+                android:layout_width="280dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:fontFamily="@font/psmedium"
+                android:hint="@string/pno"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/birth_" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="352dp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tlb2"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/scrollview_"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="700dp"
+        android:fontFamily="@font/psmedium"
+        android:text="@string/buy_price"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
